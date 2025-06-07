@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: jksoam-container
-        image: nginx:latest
+        image: jksoam777/nginx:home
         ports:
         - containerPort: 80 # Adjust as needed
       
