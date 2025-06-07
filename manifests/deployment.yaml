@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jksoam-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jksoam-app
+  template:
+    metadata:
+      labels:
+        app: jksoam-app
+    spec:
+      containers:
+      - name: jksoam-container
+        image: nginx:latest
+        ports:
+        - containerPort: 80 # Adjust as needed
+      
